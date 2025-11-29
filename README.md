@@ -86,7 +86,7 @@ styles.css (optional)
 Add screenshots to visually represent your UI.
 Example:
 
-![Dashboard Preview](path-to-your-image)
+![Dashboard Preview](https://github.com/Akanksha418/FactWise-AC-G-GRID-Dasboard/blob/main/Screenshot%202025-11-29%20132902.png?raw=true)
 
 **Contributing**
 Contributions are welcome. You may open issues or submit pull requests for enhancements or bug fixes.
