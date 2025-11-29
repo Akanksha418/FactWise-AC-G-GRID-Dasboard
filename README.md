@@ -1,16 +1,95 @@
-# React + Vite
+**FactWise Dashboard**
+This repository contains a fully functional React-based dashboard UI with a clean and modern design. The project implements a pastel UI theme, an interactive toolbar, AG Grid integration, and a responsive layout suitable for data-driven applications.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Overview**
+The FactWise Dashboard is built entirely using React and custom CSS. It focuses on simplicity, usability, and clean UI design. It includes a search bar, filter dropdown, a dark action button, and a configurable data table using AG Grid. The UI is styled using a pastel color palette with optional theme customization.
 
-Currently, two official plugins are available:
+**Features**
+Full React project with component-based structure
+Pastel-theme user interface with subtle shadows and modern layout
+Responsive design compatible with desktop and mobile screens
+AG Grid table integration for displaying and managing data
+Search and filter options within the toolbar
+Custom CSS for theme control
+Easily extendable architecture for additional dashboard widgets or modules
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Folder Structure
+src/
+│── App.jsx
+│── App.css
+│── main.jsx
+│
+├── components/
+│     ├── FactWiseDashboard.jsx
+│     ├── FactWiseDashboard.css
+│
+├── data/
+│     └── data.js
+│
+└── assets/
 
-## React Compiler
+**Technologies Used**
+React
+JavaScript (ES6+)
+Vite or Create React App (depending on your setup)
+CSS3
+AG Grid
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Installation and Setup**
+1. Clone the Repository
+git clone https://github.com/<your-username>/<repository-name>.git
+cd <repository-name>
 
-## Expanding the ESLint configuration
+2. Install Dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Run the Development Server
+npm run dev
+
+Your application will start on the local development server.
+If using Vite, it usually runs at:
+
+http://localhost:5173/
+
+Building the Project
+
+To generate a production build:
+
+npm run build
+
+This will create an optimized build folder for deployment.
+
+**Deployment**
+This project can be deployed using services such as:
+GitHub Pages
+Vercel
+Netlify
+Render
+
+**If you need deployment instructions for any platform, they can be provided.**
+Customization
+You can customize the following:
+Color themes (pastel, dark, light)
+Toolbar layout
+Grid column definitions
+Global UI style
+Additional components and data views
+
+**Main styling files include:**
+FactWiseDashboard.css
+App.css
+styles.css (optional)
+
+
+**Screenshots**
+
+Add screenshots to visually represent your UI.
+Example:
+
+![Dashboard Preview](path-to-your-image)
+
+**Contributing**
+Contributions are welcome. You may open issues or submit pull requests for enhancements or bug fixes.
+
+**License**
+This project is licensed under the MIT License.
