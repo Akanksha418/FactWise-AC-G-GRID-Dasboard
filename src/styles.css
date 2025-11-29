@@ -1,0 +1,161 @@
+/* ------------------------------
+   🌸 GLOBAL PASTEL THEME
+------------------------------ */
+:root {
+  --pastel-bg: #fdebf3;
+  --pastel-card: #ffe4ea;
+  --pastel-toolbar: #ffd1dc;
+  --pastel-pink: #ffb3c6;
+  --pastel-purple: #d7b4f3;
+  --pastel-blue: #c5d8ff;
+  --pastel-mint: #c8f7dc;
+  --pastel-peach: #ffddc1;
+
+  --text-dark: #3a3a3a;
+  --text-muted: #6b6b6b;
+}
+
+/* --- PAGE WRAPPER --- */
+.dashboard-wrapper {
+  padding: 22px;
+  background: var(--pastel-bg);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* --- TOOLBAR CONTAINER --- */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  background: var(--pastel-toolbar);
+  padding: 16px 22px;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+/* LEFT SECTION */
+.toolbar .left {
+  display: flex;
+  gap: 12px;
+}
+
+/* SEARCH INPUT */
+.quick-input {
+  padding: 11px 15px;
+  border: 1px solid #f8c4d4;
+  background: #fff5f8;
+  border-radius: 12px;
+  width: 240px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.quick-input:focus {
+  border-color: var(--pastel-purple);
+  box-shadow: 0 0 0 4px rgba(215,180,243,0.35);
+}
+
+/* DROPDOWN */
+select {
+  padding: 11px 13px;
+  border-radius: 12px;
+  border: 1px solid #f8c4d4;
+  font-size: 14px;
+  background: #fffafe;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+select:hover {
+  border-color: var(--pastel-purple);
+}
+
+/* RIGHT BUTTONS */
+.toolbar .right {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTONS - Pastel Gradient Style */
+.toolbar button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: linear-gradient(135deg, #d4c0ff, #a5c8ff);
+  color: #0c0b0b;
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+
+.toolbar button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-blue));
+}
+
+/* --- AG GRID CUSTOM STYLE --- */
+.ag-theme-alpine {
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  background: var(--pastel-card) !important;
+}
+
+/* Header Background */
+.ag-theme-alpine .ag-header {
+  background: var(--pastel-blue) !important;
+  border-bottom: 1px solid #d0d7e2;
+}
+
+.ag-header-cell-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+/* Cells */
+.ag-cell {
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+/* Zebra rows */
+.ag-row-odd {
+  background: #fffaff !important;
+}
+
+.ag-row-even {
+  background: #fff3fa !important;
+}
+
+/* Hover effect */
+.ag-row-hover {
+  background: var(--pastel-mint) !important;
+  transition: 0.2s ease-in-out;
+}
+
+/* Selected row */
+.ag-row-selected {
+  background: var(--pastel-peach) !important;
+  font-weight: 600;
+}
+
+/* Scrollbar (pastel) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffe6ef;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pastel-purple);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c19ef0;
+}
